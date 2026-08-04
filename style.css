@@ -49,3 +49,36 @@ main {
   }
 }
 
+/* LALIN */
+.lampu-merah-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background-color: black;
+  width: fit-content;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 30px;
+
+  div {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+  }
+  .red {
+    background-color: red;
+  }
+
+  .yellow {
+    background-color: yellow;
+  }
+
+  .green {
+    background-color: rgb(64, 255, 47);
+  }
+
+  .off {
+    opacity: 0.2;
+  }
+}
