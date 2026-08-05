@@ -233,3 +233,33 @@ form {
     }
   }
 }
+
+.password {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  margin: 30px auto;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 5px 10px;
+
+  label {
+    display: block;
+  }
+
+  input {
+    padding: 5px;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  img {
+    height: 20px;
+    cursor: pointer;
+  }
+}
