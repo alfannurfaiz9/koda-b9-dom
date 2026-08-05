@@ -255,6 +255,46 @@ form {
   }
 }
 
+/* POKEMON */
+
+#pokemon {
+  max-width: 60%;
+  margin: 30px auto;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  color: white;
+
+  div {
+    padding-bottom: 5px;
+    box-shadow: 1px 1px 4px 1px rgb(219, 218, 218);
+    border-radius: 10px;
+    background-color: crimson;
+    overflow: hidden;
+
+    img {
+      background-color: rgb(220, 220, 220);
+      width: 100%;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: none;
+      gap: 10px;
+
+      p {
+        margin-top: 5px;
+        font-size: 9px;
+        padding: 5px 10px;
+        border-radius: 20px;
+        background-color: rgb(126, 12, 35);
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   header {
     nav {
@@ -267,7 +307,7 @@ form {
       .show {
         display: flex;
         flex-direction: column;
-        position: fixed;
+        position: absolute;
         background-color: white;
         top: 60px;
         left: 0;
