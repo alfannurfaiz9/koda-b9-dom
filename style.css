@@ -9,6 +9,17 @@ header {
   padding: 10px;
   border-bottom: 1px solid lightgray;
 
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+
+    img {
+      display: none;
+    }
+  }
+
   ul {
     display: flex;
     align-items: center;
@@ -214,26 +225,6 @@ form {
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .calculator {
-    width: 80%;
-  }
-
-  .calculator-container {
-    flex-direction: column-reverse;
-
-    .left {
-      flex-grow: 1;
-      width: 100%;
-    }
-
-    .right {
-      flex-grow: 1;
-      width: 100%;
-    }
-  }
-}
-
 .password {
   position: relative;
   display: flex;
@@ -261,5 +252,33 @@ form {
   img {
     height: 20px;
     cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    nav {
+      padding: 0px 20px;
+
+      ul {
+        display: none;
+      }
+
+      .show {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        background-color: white;
+        top: 60px;
+        left: 0;
+        right: 0;
+      }
+
+      img {
+        height: 30px;
+        display: block;
+        cursor: pointer;
+      }
+    }
   }
 }
