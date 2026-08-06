@@ -5,15 +5,44 @@
   text-decoration: none;
 }
 
+.hide {
+  opacity: 0;
+}
+
+.red {
+  opacity: 10;
+}
+
 header {
-  padding: 10px;
+  padding: 10px 40px;
   border-bottom: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  div {
+    display: flex;
+    gap: 15px;
+
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
+
+      a {
+        padding: 5px 10px;
+        color: white;
+        border-radius: 5px;
+        background-color: black;
+      }
+    }
+  }
 
   nav {
+    width: 80%;
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: space-between;
-    padding: 0px 40px;
 
     img {
       display: none;
@@ -33,6 +62,11 @@ header {
 
     .active {
       background-color: rgb(213, 213, 213);
+    }
+
+    button {
+      border: none;
+      background: none;
     }
 
     a {
@@ -95,9 +129,27 @@ main {
 }
 
 /* SURVEY */
+
+#form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+  background: no-repeat url(./assets/bg.jpg);
+  background-size: cover;
+}
+
 form {
   width: 30%;
   margin: 40px auto;
+  padding: 20px;
+  background-origin: padding-box;
+  background-color: rgba(255, 255, 255, 0.073);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.185);
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px 1px rgba(33, 33, 33, 0.281);
 
   h1 {
     margin-bottom: 30px;
@@ -115,7 +167,8 @@ form {
     }
 
     input {
-      padding: 5px 10px;
+      padding: 5px 0px;
+      background: none;
     }
 
     select {
@@ -295,6 +348,33 @@ form {
   }
 }
 
+/* LOGIN */
+
+#login {
+  width: 300px;
+
+  input {
+    border: none;
+    border-bottom: 1px solid white;
+    background: none;
+
+    &:focus {
+      background: none;
+    }
+  }
+
+  p {
+    text-align: left;
+    padding: 5px;
+    color: red;
+  }
+}
+
+#login-submit {
+  width: 100%;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
   header {
     nav {
@@ -312,6 +392,7 @@ form {
         top: 60px;
         left: 0;
         right: 0;
+        z-index: 99;
       }
 
       img {
