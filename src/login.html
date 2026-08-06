@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../login.js" defer></script>
+    <script src="../hamburger.js" defer></script>
+  </head>
+  <body>
+    <main id="form-container">
+      <form id="login">
+        <h1>Login form</h1>
+        <div>
+          <input
+            name="username"
+            type="text"
+            placeholder="Masukkan username"
+          />
+        </div>
+
+        <div>
+          <input
+            name="password"
+            type="password"
+            placeholder="Masukkan password"
+          />
+        </div>
+        <p id="error" class="hide">Username & Password minimal 5 karakter</p>
+        <button id="login-submit" type="submit">Login</button>
+      </form>
+    </main>
+  </body>
+</html>
